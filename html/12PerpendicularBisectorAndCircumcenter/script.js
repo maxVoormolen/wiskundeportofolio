@@ -72,15 +72,15 @@ function update() {
 
     s.draw(context);
 
-    A.print(context, "A");
-    B.print(context, "B");
-    C.print(context, "C");
-    d.print(context, "d");
-    e.print(context, "e");
-    f.print(context, "f");
-    s.print(context, "s");
+    A.printText("A");
+    B.printText("B");
+    C.printText("C");
+    d.printText("d");
+    e.printText("e");
+    f.printText("f");
+    s.printText("s");
 
-    let distanceToC = s.DistanceToOtherPoint(C);
+    let distanceToC = s.distanceToAnOtherPoint(C);
 
     context.beginPath();
     context.strokeStyle = "lime";
